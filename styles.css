@@ -1,0 +1,39 @@
+body {
+    height: 100vh;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 250px;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+}  
+
+h1 {
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.footer {
+    height: 500px;
+    background-color: aqua;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}

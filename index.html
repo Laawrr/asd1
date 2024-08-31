@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>haha part 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>WOW WELCOME BACK</h1>
+    <div class="grid-container">
+    <div class="grid" id="grid-content" style="display: none;">
+        <div class="grid-item"><img src="1.png"></div>
+        <div class="grid-item"><img src="2.png"></div>
+        <div class="grid-item"><img src="3.png"></div>
+        <div class="grid-item"><a href="pass.png"><img src="4.png"></a></div>
+        <div class="grid-item"><img src="5.png"></div>
+        <div class="grid-item"><img src="6.png"></div>
+    </div>
+</div>
+
+    <br><br><br>
+
+    <div class="button">
+        <button class="toggle-button" id="btn" onclick="toggleVisibility()">CLICK TO SHOW SOMETHING</button>
+    </div>
+
+
+    <footer>
+        <div class="footer"><img src="giphy.gif" style="width: 348px;" ></div>
+    </footer>
+    
+    <script>
+        function toggleVisibility() {
+            var contentDiv = document.getElementById('grid-content');
+            var btn = document.getElementById('btn');
+            btn.style.display  = 'none';
+            contentDiv.style.display = 'grid';
+            txt.style.display = 'block';
+        }
+
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        
+        document.onkeydown = function(e) {
+            // Block F12 (keyCode 123)
+            if (e.keyCode === 123) {
+                return false;
+            }
+            
+            // Block Ctrl+Shift+I (keyCode 73 for 'I')
+            if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+                return false;
+            }
+            
+            // Block Ctrl+U (keyCode 85 for 'U')
+            if (e.ctrlKey && e.keyCode === 85) {
+                return false;
+            }
+            
+            // Block Ctrl+S (keyCode 83 for 'S')
+            if (e.ctrlKey && e.keyCode === 83) {
+                return false;
+            }
+        };
+    </script>
+</body>
+</html>
